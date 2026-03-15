@@ -29,7 +29,7 @@ const config = {
 
   // GitHub pages deployment config.
   // Update these, or provide DOCUSAURUS_ORG and DOCUSAURUS_PROJECT in CI.
-  organizationName: process.env.DOCUSAURUS_ORG ?? 'your-org-or-user',
+  organizationName: process.env.DOCUSAURUS_ORG ?? 'Ndacyayisenga-droid',
   projectName: process.env.DOCUSAURUS_PROJECT ?? 'docusaurus-poc',
 
   onBrokenLinks: 'throw',
