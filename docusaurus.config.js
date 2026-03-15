@@ -108,7 +108,7 @@ const config = {
           {
             href:
               process.env.DOCUSAURUS_REPO_URL ??
-              'https://github.com/your-org-or-user/docusaurus-poc',
+              'https://github.com/Ndacyayisenga-droid/docusaurus-poc',
             label: 'GitHub',
             position: 'right',
           },
