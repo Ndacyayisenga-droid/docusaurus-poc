@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DOCUSAURUS_URL: https://ndacyayisenga-droid.github.io
+      DOCUSAURUS_BASE_URL: /docusaurus-poc/
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
