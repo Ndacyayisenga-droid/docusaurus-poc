@@ -36,16 +36,6 @@ jobs:
       - name: Build Docusaurus site (fails on broken links)
         run: npm run build
 
-      - name: Install Playwright Chromium
-        run: npx playwright install --with-deps chromium
-
-      - name: Export PDF
-        run: npm run export:pdf
-
-      - name: Add PDF to deployed site
-        run: |
-          mkdir -p build/pdf
-          mv docs-poc.pdf build/pdf/documentation.pdf
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
