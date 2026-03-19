@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Docusaurus POC Overview
 
 This Proof of Concept (POC) demonstrates how **Docusaurus v3** can be used as a
@@ -31,4 +33,11 @@ It focuses on:
 - Use the **search bar** in the navbar to search across docs and pages.
 - Try the **theme toggle** in the navbar to switch between light and dark mode.
 - Resize the browser window to see the **mobile navigation drawer**.
+
+## Proof it works
+
+- **Search proof**: type `DOCUSAURUS_SEARCH_PROOF_9D2C7` into the search bar. This token appears on this page.
+- **PDF proof**: open the exported PDF after deployment: <a href={useBaseUrl('/pdf/documentation.pdf')}>Download PDF</a>
+
+`DOCUSAURUS_SEARCH_PROOF_9D2C7`
 

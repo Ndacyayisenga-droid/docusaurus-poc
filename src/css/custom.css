@@ -28,3 +28,19 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Asciidoctor HTML output (docs/asciidoc-example.adoc → asciidoc-example.mdx) */
+.asciidoc-from-adoc .paragraph,
+.asciidoc-from-adoc .ulist,
+.asciidoc-from-adoc .olist {
+  margin-bottom: var(--ifm-leading);
+}
+.asciidoc-from-adoc .listingblock pre {
+  padding: var(--ifm-pre-padding);
+  border-radius: var(--ifm-global-radius);
+  background: var(--prism-background-color);
+}
+.asciidoc-from-adoc .title {
+  font-weight: var(--ifm-heading-font-weight);
+  margin-top: 1rem;
+}

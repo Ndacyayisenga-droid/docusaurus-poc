@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "generate:adoc": "node scripts/generate-asciidoc-example.mjs",
+    "prestart": "npm run generate:adoc",
+    "prebuild": "npm run generate:adoc",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
@@ -25,6 +28,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@asciidoctor/core": "^3.0.4",
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "docusaurus-plugin-search-local": "2.1.2",

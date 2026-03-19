@@ -7,6 +7,8 @@
 # Generated files
 .docusaurus
 .cache-loader
+# From docs/asciidoc-example.adoc via scripts/generate-asciidoc-example.mjs
+docs/_asciidoc-example-html.json
 
 # PDF export output (scripts/export-pdf.mjs)
 docs-poc.pdf

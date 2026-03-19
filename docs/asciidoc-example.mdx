@@ -1,0 +1,12 @@
+---
+sidebar_position: 5
+title: AsciiDoc example
+description: "Source file is docs/asciidoc-example.adoc (AsciiDoc). HTML is generated at build time."
+---
+
+import AsciidocFromAdoc from '@site/src/components/AsciidocFromAdoc';
+import data from './_asciidoc-example-html.json';
+
+export default function AsciiDocExamplePage() {
+  return <AsciidocFromAdoc html={data.html} />;
+}

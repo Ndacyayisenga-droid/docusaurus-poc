@@ -57,6 +57,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // Canonical AsciiDoc lives in *.adoc; generated *.mdx is produced by npm prestart/prebuild
+          exclude: ['**/*.adoc'],
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.

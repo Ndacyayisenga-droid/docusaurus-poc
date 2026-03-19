@@ -1,0 +1,32 @@
+= AsciiDoc example
+
+This page is written in *AsciiDoc* (file `docs/asciidoc-example.adoc`). Docusaurus does not load `.adoc` natively; this repo uses **Asciidoctor.js** on `npm run build` / `npm start` to generate `docs/_asciidoc-example-html.json`, which `docs/asciidoc-example.mdx` renders.
+
+== Why AsciiDoc?
+
+AsciiDoc offers:
+
+* Strong semantics (sections, admonitions, cross-references)
+* Good fit for long-form technical docs and books
+* Output to HTML, PDF, and more via Asciidoctor
+
+== Quick example
+
+A minimal YAML snippet:
+
+[source,yaml]
+----
+site_name: MkDocs POC
+docs_dir: docs
+theme:
+  name: material
+----
+
+== Cross-references
+
+From the built site, you can use normal AsciiDoc links (relative to this page URL):
+
+* link:../../[Home]
+* link:../getting-started/[Getting Started]
+
+For native AsciiDoc inside the *same* stack as the SSG, compare the **MkDocs POC** (`mkdocs-asciidoctor-backend`) and **Roq POC** (`quarkus-roq-plugin-asciidoc`).

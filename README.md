@@ -120,7 +120,7 @@ Alternatively, you can set these environment variables in CI:
 ## Docusaurus features demonstrated
 
 - **Docs-as-Code**: All content in `docs/` is written in Markdown/MDX and
-  versioned with the code. An **AsciiDoc example** page (`docs/asciidoc-example.md`) provides the Markdown equivalent of the MkDocs POC’s AsciiDoc page (Docusaurus does not render `.adoc` files).
+  versioned with the code. An **AsciiDoc example** is authored as `docs/asciidoc-example.adoc` and converted at build time with **Asciidoctor.js** into `docs/_asciidoc-example-html.json`, then shown via `docs/asciidoc-example.mdx` (Docusaurus still has no first-class `.adoc` loader; this proves the AsciiDoc toolchain in-repo).
 - **Tabs & Admonitions**: See `docs/code-examples.md` and `docs/getting-started.md`.
 - **Code blocks**: Multiple languages with syntax highlighting, line numbers,
   and copy buttons.
