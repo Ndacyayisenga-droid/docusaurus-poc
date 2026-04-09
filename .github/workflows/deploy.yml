@@ -36,6 +36,11 @@ jobs:
       - name: Build Docusaurus site (fails on broken links)
         run: npm run build
 
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Export documentation to PDF
+        run: npm run export:pdf
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
